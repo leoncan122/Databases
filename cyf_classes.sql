@@ -52,7 +52,6 @@ INSERT INTO classes_assistances (student_id, class_id, class_date) VALUES (7, 1,
 
 SELECT * FROM mentors WHERE years_in_glasgow > 5;
 SELECT * FROM mentors WHERE fav_progr_leng = 'Javascript';
-SELECT * FROM students WHERE cyf_graduated = 'true';
+SELECT * FROM students WHERE cyf_graduated is true;
 SELECT * FROM classes WHERE specific_date < '2021-06-01 00:01:00';
-
-SELECT * FROM classes_assistances;
+SELECT student_id, class_id FROM classes_assistances WHERE class_id = 3;
